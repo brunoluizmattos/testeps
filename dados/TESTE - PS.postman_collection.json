@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "bb1a7a58-6bb2-44ab-8970-21246435bb70",
+		"name": "TESTE - PS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15405891"
+	},
+	"item": [
+		{
+			"name": "CONTEINER",
+			"item": [
+				{
+					"name": "CRIAR CONTAINER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cliente",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "TEST1234567",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/conteiner",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"conteiner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDITAR CONTEINER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cliente",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "NOVO NOME DO CLIENTE",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/conteiner/1",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"conteiner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTER CONTEINER",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cliente",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "NOVO NOME DO CLIENTE",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/conteiner/9",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"conteiner",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR CONTEINER",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cliente",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "numero",
+									"value": "NOVO NOME DO CLIENTE",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/conteiner/1",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"conteiner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MOVIMENTACAO",
+			"item": [
+				{
+					"name": "CRIAR MOVIMENTAÇÃO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "conteiner",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "dataInicio",
+									"value": "2022-05-01 15:00:00",
+									"type": "text"
+								},
+								{
+									"key": "dataFim",
+									"value": "2022-05-01 16:00:00",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/movimentacao",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"movimentacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EDITAR MOVIMENTACAO",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "conteiner",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "dataInicio",
+									"value": "2022-05-01 18:00:00",
+									"type": "text"
+								},
+								{
+									"key": "dataFim",
+									"value": "2022-05-01 19:00:00",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://testeps.xyz/movimentacao/1",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"movimentacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OBTER MOVIMENTACAO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://testeps.xyz/movimentacao/1",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"movimentacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETAR MOVIMENTACAO",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://testeps.xyz/movimentacao/2",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"movimentacao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RELATORIO",
+			"item": [
+				{
+					"name": "relatorio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://testeps.xyz/relatorio",
+							"protocol": "http",
+							"host": [
+								"testeps",
+								"xyz"
+							],
+							"path": [
+								"relatorio"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRIAR CLIENTE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http:/testeps.xyz/v1/cliente",
+					"host": [
+						"http"
+					],
+					"port": "",
+					"path": [
+						"testeps.xyz",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
